@@ -1,0 +1,63 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-auto-rows: auto;
+    color: #333333;
+    font-family: Times New Roman;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.jsd-notification {
+    grid-column: 1/9;
+    grid-row: 1;
+}
+
+.jsd-message-content {
+    grid-column: 1/9;
+    grid-row: 3;
+    background-color: #fafafa;
+    padding: 0px 15px 15px 15px;
+} 
+
+.logo {
+    grid-column: 1;
+    grid-row: 5 / span 6;
+    border: 0;
+}
+
+.row1, .row2, .row3 {
+    grid-column: 2/9;
+    padding: 0;
+    margin: 0;
+}
+
+.jsd-unsubscribe-link, .jsd-issue-link, .jsd-servicedesk-link {
+    color: #3572b0;
+    text-decoration: none;
+}
+
+.jsd-link-separator {
+    padding: 0 10px;
+}
+
+.jsd-help-center-footer, .jsd-request-sharedwith {
+    color: #707070;
+    font-size: 12px;
+}
+
+/* Applied to reply stripping marker, when incoming email is enabled. */
+.jsd-reply-marker {
+    color: #999999;
+}
+
+.jsd-reply-marker-hint {
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+.jsd-activity-item-separator {
+    grid-column: 1/9;
+    grid-auto-rows: auto;
+    border-bottom: 1px solid #cccccc;
+}

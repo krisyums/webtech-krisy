@@ -1,0 +1,21 @@
+@import 'bootstrap.min.css';
+
+a, .hover {
+    text-decoration: none;
+    color: deeppink;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+p {
+    margin: 5px 0px;
+    box-sizing: content-box;
+}
+
+article {
+    text-align: justify;
+}

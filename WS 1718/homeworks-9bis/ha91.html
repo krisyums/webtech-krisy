@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My own world - Contact form</title>
+        <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="ha81.css">
+        <script>
+                function addPost() {
+                    var art = document.createElement("article");
+                    art.setAttribute("id", "myArticle");
+                    document.body.appendChild(art);
+                
+                    var head = document.createElement("h2");
+                    var ubersch = document.getElementByName("hblog").textContent;
+                    head.appendChild(ubersch);
+                    document.getElementById("myArticle").appendChild(head);
+                
+                    var par = document.createElement("p");
+                    var inhalte = document.getElementByName("iblog").textContent;
+                    par.appendChild(inhalte);
+                    document.getElementById("myArticle").appendChild(par);
+                }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1><img src="contentful.png" width="20px" height="20px">Krisy's Website</h1>
+        </header>
+        <nav>
+            <ul>
+            <li>Willkommen</li>
+            <li><a href="ha91.html">Blog</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="autor.html">&Uumlber den Autor</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form>
+                <fieldset>
+                    &Uumlberschrift: <input type="text" name="hblog"></input><br>
+                    Inhalt: <textarea name="iblog" rows="5" cols="20"></textarea><br>
+                </fieldset>
+                <input type="submit" value="Add post" onclick="addPost()"> <input type="reset" value="Reset post">
+            </form>
+        </main>
+        <footer>
+            <ul class="foo">
+                <li class="foo">Datenschutzerkl&aumlrung</li>
+                <li class="foo">Impressum</li>
+            </ul>
+        </footer>
+    </body>
+</html>

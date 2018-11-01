@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="custnotif.css">
+    </head>
+    <body>
+    
+    
+<div class="jsd-notification">${message.content}</div>
+<div class="jsd-activity-item-separator"></div>
+
+<div class="jsd-message-content">
+    <h3>${issue.reporter.name} has sent the following ticket:</h3>
+    ${issue.description}
+</div>
+    <div class="logo"><img src="https://dl.dropboxusercontent.com/s/8tz1oep9vv2abp7/logo-black_700x149_preview.png" width="100px" height="100px"></div>
+    <div class="row1">
+        <a class="jsd-issue-link" href="${request.url}">View request</a> 
+        <span class="jsd-link-separator">&middot;</span>
+        <a class="jsd-unsubscribe-link" href="${request.disable.notifications.url}">Turn off this request's notifications</a>
+    </div>
+    <div class="row2">
+        <p class="jsd-request-sharedwith"> This is shared with ${request.sharedwith}.</p>
+    </div>
+    <div class="row3">
+        <p class="jsd-help-center-footer">
+        ${helpcenter.name}, powered by <a class="jsd-servicedesk-link" href="${atlassian.url}">JIRA Service Desk</a>, sent you this message.
+        </p>
+    </div>
+
+
+    </body>
+</html>

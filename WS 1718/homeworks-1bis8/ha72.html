@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hausaufgabe 7, Aufgabe 2 Rastersystem</title>
+        <style>
+            main {
+                border: 1px solid black;
+            }
+            
+            .row {
+                border: 1px solid black;
+            }
+            
+            aside {
+                border: 1px solid black;
+            }
+            
+            .row::after { 
+                content: ""; 
+                clear: both; 
+                display: block; 
+            } 
+            
+            [class*="col-"] { 
+                float: left; 
+            }
+            
+            .col-1 {width: 8.33%;} 
+            .col-2 {width: 16.66%;} 
+            .col-3 {width: 25%;} 
+            .col-4 {width: 33.33%;} 
+            .col-5 {width: 41.66%;} 
+            .col-6 {width: 50%;} 
+            .col-7 {width: 58.33%;} 
+            .col-8 {width: 66.66%;} 
+            .col-9 {width: 75%;} 
+            .col-10 {width: 83.33%;} 
+            .col-11 {width: 91.66%;} 
+            .col-12 {width: 100%;}
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <header class="col-12">
+                <h1>YASN - Fluid Design</h1> 
+            </header> 
+        </div> 
+        <div class="row">
+            <nav class="col-3">
+                <ul> 
+                  <li>Dashboard</li> 
+                  <li>Dashboard</li> 
+                  <li>Dashboard</li> 
+                  <li>Dashboard</li>
+                </ul> 
+            </nav> 
+            <main class="col-6">
+                <h1>Blog von Trapattoni</h1> 
+                <p>Es gibt im Moment...</p> 
+            </main> 
+            <aside class="col-3">
+                <h1>Zitate</h1> 
+                ...
+            </aside> 
+        </div> 
+        <div class="row">
+            <footer class="col-12">
+                <p>Ändere die Fenstergröße...
+            </footer> 
+        </div> 
+    </body>
+</html>
