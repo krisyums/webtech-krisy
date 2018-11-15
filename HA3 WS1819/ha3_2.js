@@ -13,3 +13,14 @@ function isEven(number) {
 console.log(isEven(-82));
 console.log(isEven(321));
 console.log(isEven(-1));
+
+// another possibility for this task
+/* switch(number) {
+        case 0:
+            return true;
+        case 1:
+            return false;
+        default:
+        return isEven(number-2);
+}
+*/
