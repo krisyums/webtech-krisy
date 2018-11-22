@@ -6,7 +6,7 @@ function deepEqual(x,y) {
         if(Object.keys(x).length != Object.keys(y).length) {
             return false
         }
-        for(var i in x) {
+        for(let i in x) {
             if(!deepEqual(x[i],y[i])) {
                 return false
             }
