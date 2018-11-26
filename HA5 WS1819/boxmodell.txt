@@ -1,0 +1,80 @@
+FRAGE 1: Drei häufigsten Typen von Boxen sind:
+
+ANTWORT:
+
+block: Box der auf den anderen Boxen gestapelt ist. Kann Eigenschaften width und height
+annehmen. Alle Eigenschaften von box modell gelten für diesen Typ.
+
+inline: Gegenteil von block Typ. Es fliesst mit dem Text im Dokument. Inhalt kann in
+mehrere Zeilen zerteilt werden (wie Textzeilen). width und height Eigenschaften haben
+keinen Einfluss auf inline Boxes. Auch margin, padding, border beeinflussen nur die Position
+des umliegenden Textes, nicht der umliegenden block-Elementen.
+
+inline-block: hybrid-Ansatz. Es fliesst mit dem Text ohne Zeilenumbrüche vor und nach sich, kann aber seine Größe mittels width und height ändern, 
+wie block-Typ. Es kann auch nicht in mehrere Zeilen zerteilt werden.
+
+<a> - inline
+<article> - block
+<div> - block
+<h1> - block
+<img> - inline block
+<p> - block
+<span> - inline
+<strong> - inline
+
+Den Box-Typ eines HTML-Elements kann man mit der display​-Eigenschaft ändern.
+
+---------------------------------------------------
+
+FRAGE 2: Was ist die automatische Höhe und Breite der unterschiedlichen Box-Typen, wenn die Werte nicht gesetzt sind? 
+Wie wird die Gesamt-Breite der unterschiedlichen Box-Typen bestimmt?  Wie  wird  der vertikale Abstand von zwei 
+benachbarten Block-Elementen berechnet, z.B. von <h1> und <p>?
+
+ANTWORT:
+
+Block-Boxen nehmen immer ganze verfügbare Breite, falls nicht spezifiziert.
+Die Breite der inline- und inline-block-Boxen wird durch den beinhalteten Text bestimmt, falls
+nicht anders spezifiziert.
+Die Höhe wird jeweils durch beinhalteten Text bestimmt.
+Der vertikale Abstand, falls nicht spezifiziert, ist gleich der Höhe des größeren von beiden
+fonts.
+
+---------------------------------------------------
+
+FRAGE 3: Sie können das Vorschaufenster in Cloud9 nach links oder rechts verschieben und damit die Größe des Viewports verändern. 
+Was passiert hierbei mit den Größen von block-Boxen? Mit welchen Eigenschaften kann man eine minimale und maximale Größe angeben?
+
+ANTWORT:
+
+Wenn width und height Eigenschaften nicht angegeben sind, werden sich die block-Boxen
+mit der Breite des Viewports skalieren, d.h. verkürzen, bzw. verlängern. Minimale und
+maximale Größe kann man mit min-width, max-width und min-height, max-height angeben.
+Dann wird es nur zwischen den Werten skaliert, sonst bleibt die Größe konstant ( >max),
+oder wird Scrollbar angezeigt ( <min).
+
+---------------------------------------------------
+
+FRAGE 4: Was passiert, wenn von einer Box die Höhe und Breite gesetzt sind, es aber mehr Inhalt (z.B. Text) gibt als in diese Box passt? 
+Mit welcher Eigenschaft wird dieses Verhalten kontrolliert?
+
+ANTWORT:
+
+Falls man nichts damit macht, wird der Text einfach über die Rahmen des Boxes gehen.
+Dieses Verhalten kontrolliert man mit overflow​. Mögliche Werte sind:
+
+visible: Standardwert. Verhalten nicht behandelt, text geht über die Rahmen.
+hidden: der Überlauf wird einfach nicht angezeigt
+scroll: der Überlauf ist versteckt, aber mit scrollbar kann man den Rest ansehen.
+auto: Aktion abhängig von dem Browser.
+initial: setzt den Standardwert.
+Inherit: nimmt den Wert von Elternelement.
+
+---------------------------------------------------
+
+FRAGE 5: Was passiert mit einer block-Box, wenn diese kleiner als das Parent-Element ist und die linke und rechte margin auf auto gesetzt werden?
+
+ANTWORT:
+
+Der kleinere block-Box wird zentralisiert unter dem text des parent-Elements (oben) positioniert.
+
+
