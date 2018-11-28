@@ -4,6 +4,14 @@
         <title>Hausaufgabe 5, Aufgabe 1</title>
         <link rel="stylesheet" href="ha51.css">
         <style>
+        /* Universalselektor is the star
+                Elementselektor is <h1>
+                id-Selektor is <div id="bla"> and in CSS file it's #bla
+                Klassenselektor is <div class="head"> and in CSS file it's .head
+                Nachfahrselektor is <p> Text <em>italic text</em></p> and in CSS file it's p em {}
+                Attributselektor is 
+                    td[width] { background-color: red }: Alle E-Elemente, deren "width"-Attribut gesetzt ist – gleich, mit welchem Wert
+        */
             h1 {
                 color: #fa3e99 !important;
             }
@@ -16,7 +24,8 @@
             #firstTextPart:hover {
                 background-color: #fa3e99;
             }
-            :not(*) {
+            
+            :not(*) { 
                 background-color: #adad;
             }
         </style>
