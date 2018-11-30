@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>&Uumlberschriften - Hausaufgabe 6</title>
+        <style>
+            body {
+                counter-reset: section;
+            }
+            h1 {
+                counter-reset: subsection;
+            }
+            h1:before {
+                counter-increment: section;
+                content: counter(section) ". ";
+            }
+            h2 {
+                padding-left: 20px;
+            }
+            h2:before {
+                counter-increment: subsection;
+                content: counter(section) "." counter(subsection) " ";
+            }
+            h3 {
+                padding-left: 50px;
+            }
+            h3:before {
+                counter-increment: subsection;
+                content: counter(section) "." counter(subsection) " ";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The biggest line ever</h1>
+        <h2>The second biggest line ever</h2>
+        <h3>The third biggest line ever</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <br>
+        <h1>The 2nd biggest line ever</h1>
+        <h2>The 2nd second biggest line ever</h2>
+        <h3>The 3rd third biggest line ever</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </body>
+</html>
