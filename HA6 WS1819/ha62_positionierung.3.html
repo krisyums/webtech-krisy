@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HA6, Positionierung Aufgabe</title>
+</head>
+<!--mit relative bei header, div, nav, article und footer sehen alle Elemente fast wie das Wireframe aus; aside sollte absolute sein (wegen der Groesse) -->
+<!--nav, article und aside werden untereinander gezeigt; das ist loesbar mit top/right/bottom/left-->
+<!--aside positioniert sich an dem relative Elternelement (div), article muss an dem Viewport angepasst werden-->
+<body>
+    <header style="position: relative; height:5em; border: 2px dashed black;">
+        <h1>Welcome to WebTech</h1>
+    </header>
+    <div style="position: relative; border: 2px dashed orange;">
+        <nav style="position: relative; width: 150px; border: 2px dashed black;">
+            <ul>
+                <li>Startseite</li>
+                <li>Impressum</li>
+                <li>Kontakt</li>
+            </ul>
+        </nav>
+        <article style="position: relative; top: -90px; left: 155px; width:20em; border: 2px dashed blue;">
+            <h2 style="border: 2px dashed black;">&Uumlberschrift</h2>
+            <p id="p1" style="text-align:justify; padding: 1em; height:15em; width: 50%; border: 2px dashed green;">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            </p>
+            <p id="p2" style="border: 2px dashed black;">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </article>
+        <aside style="position: absolute; right: 0px; top: 0px; border: 2px dashed green;">
+            <img src="werb1.jpg" alt="Werbung" width="100px" height="300px" style="display: inline-block;">
+            <br>
+            <a href="#top">Zum Anfang</a>
+        </aside>
+    </div>
+    <footer style="position: relative; text-align:center; height:3em; border: 2px dashed black;">
+        <ul>
+            <li style="display:inline;">Startseite</li>
+            <li style="display:inline;">Impressum</li>
+            <li style="display:inline;">Kontakt</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

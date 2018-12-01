@@ -1,0 +1,90 @@
+body {
+    background-color: lightgrey;
+    font-family: Sans-Serif;
+    color: #222222;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+    margin: 0px;
+}
+
+.content h1, h2, h3, h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+header {
+    margin: 1rem;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    min-height: 400px;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px #999;
+}
+
+.nav, .footer {
+    background-color: #909090;
+}
+
+.header, .nav, .content, .footer {
+    padding: 1em 1em 1em 1em;
+}
+
+.nav ul, .footer ul {
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.nav li, .footer li {
+    display: inline;
+    letter-spacing: 2px;
+}
+
+.footer {
+    font-size: 0.75em;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+table td {
+    padding: 2px 4px 2px 4px;
+}
+
+table td:nth-of-type(1) {
+    font-weight: bold;
+    text-align: left;
+}
+
+table td:nth-of-type(2) {
+    font-weight: normal;
+    text-align: right;
+}
+
+table tr:nth-of-type(odd) {
+    background-color: lightgrey;
+}
+
+table tr:nth-of-type(even) {
+    background-color: white;
+}
