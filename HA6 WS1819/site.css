@@ -53,6 +53,10 @@ header {
     letter-spacing: 2px;
 }
 
+.nav .active {
+    font-weight: bold;
+}
+
 .footer {
     font-size: 0.75em;
 }
