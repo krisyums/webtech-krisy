@@ -50,7 +50,7 @@
 	                    Anrede: <input type="radio" name="anrede" value="male" required> Herr <input type="radio" name="gender" value="female">Frau<br>
 	                    Name: <input type="text" name="name" required><br>
 	                    E-Mail: <input type="email" name="email" value="@" required><br>
-	                    Bezirk: <select id="bezirk" name="bezirk" autocomplete="on">
+	                    <datalist id="bezirk" name="bezirk">
 	                        <option value="charlottenburg-wilmersdorf">Charlottenburg-Wilmersdorf</option>
 	                        <option value="reinickendorf">Reinickendorf</option>
 	                        <option value="pankow">Pankow</option>
@@ -63,7 +63,8 @@
 	                        <option value="tempelhof-schoeneberg">Tempelhof-Sch&oumlneberg</option>
 	                        <option value="neukoelln">Neuk&oumllln</option>
 	                        <option value="treptow-koepenik">Treptow-K&oumlpenik</option>
-	                    	</select><br>
+	                    	</datalist>
+	                    Bezirk: <input list="bezirk" autocomplete=on id="bezirk"><br>
 	                    Telefonnummer: <input type="tel" name="phonenumber" value="+49"><br>
 	                    Betreff: <textarea name="title" cols="20"></textarea><br>
 	                    Inhalt: <textarea name="message" rows="5" cols="25"></textarea><br>
