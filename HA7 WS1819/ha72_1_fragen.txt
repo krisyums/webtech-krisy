@@ -1,0 +1,33 @@
+FRAGE: Wieso ist es hilfreich dieses zu verwenden?
+
+ANTWORT: 
+
+
+
+==================================
+
+FRAGE: Was passiert bei dem Rastersystem, wenn die HTML-Elemente genau auf 100% Breite verteilt sind und der Rand eines Elements auf eine Größe von 3px gesetzt wird? (z.B. beim <main>-Block im zweispaltigen Layout) Wie können Sie das Problem lösen?
+
+ANTWORT: 
+
+Da by default zaehlt border nicht zu der Groesse des Elements, werden die zwei Spalten nicht nebeneinander 
+sondern untereinander angezeigt. Dieses Problem kann man lösen indem man folgende Eigenschaft hinzufuegt:
+box-sizing: border-box; fuer alle betroffene Elemente.
+
+==================================
+
+FRAGE: Was bewirkt der CSS-Deklarationsblock [class*="col-"]{ float: left }?
+
+ANTWORT: 
+
+Alle Klassen mit der Anfang col- haben die Eigenschaft float: left;
+
+==================================
+
+FRAGE: Was bewirkt der komplette CSS-Deklarationsblock .row::after{ ... }?
+
+ANTWORT: 
+
+The ::after selector inserts something after the content of each selected element(s).
+
+==================================

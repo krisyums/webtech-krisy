@@ -1,0 +1,49 @@
+FRAGE: Welche verschiedenen Layout-Arten gibt es? Was sind die Unterschiede?
+
+ANTWORT: 
+
+Festes Layout: Dimensionen sind angegeben, dynamische Anpassung ist nicht möglich.
+
+Flüssiges Layout: wird in Prozenten definiert. Wenn die Größe des Fensters verändert wird, verändern sich auch die Dimensionen des Layouts. Inhalte bleiben in derselben Größe.
+
+Elastisches Layout: skaliert mit der Schriftgröße, nicht Bildschirmbreite; Breitenangaben werden in em angegeben, bezieht sich auf der Schriftgröße
+
+Adaptives Layout: festes Layout, passt sich bei Änderungen des Viewports an. Bildschirmbreite muss vordefiniert werden (Umbruchstellen usw) und wechselt zwischen verschiedenen Versionen
+
+Responsive Layout: hat Eigenschaften von adaptiven und flüssigen Layouts. Es verfügt über Umbruchstellen, und inzwischen verhält sich wie flüssiges Layout.
+
+
+==================================
+
+FRAGE: Worauf beziehen sich Prozentangaben? Finden Sie heraus, worauf sich Prozentangaben bei margin-left, margin-top, height, font-size und border-top-width beziehen (z.B. im MDN).
+
+ANTWORT: 
+
+Die Prozentangaben beziehen sich auf der Größe des Viewports.
+
+Wenn margin-left und margin-top zB auf 25% gesetzt werden, skaliert die Größe des Elements auf dem Fenster.
+Height skaliert mit Prozentangabe nicht.
+Font-size ist bei 1em/16px/100% auf default Größe, skaliert mit höherer Prozentangabe.
+Border-top-width skaliert mit Prozentangabe nicht.
+
+
+==================================
+
+FRAGE: Was ist die Einheit em und was ist der Unterschied zur Einheit rem?
+
+ANTWORT: 
+
+Em ist eine relative Einheit, kann zur Bestimmung von Zeichenbreite abhängig von der Schriftgröße benutzt werden. Rem entspricht der Schriftgröße, die für das Wurzelelement festgelegt wurde. (das html-Element)
+
+
+==================================
+
+FRAGE: Was bedeuten die Einheiten vw und vh?
+
+ANTWORT: 
+
+vw (viewport width): entspricht dem 100. Teil der Breite des Viewports
+vh (viewport height): entspricht dem 100. Teil der Höhe des Viewports
+
+
+==================================

@@ -1,0 +1,32 @@
+body {
+    background-color: lightgrey;
+    font-family: Sans-Serif;
+    color: #222222;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    min-height: 400px;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px #999;
+}
+
+.nav, .footer {
+    background-color: #909090;
+}
+
+.header, .nav, .content, .footer {
+    padding: 1em 1em 1em 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+header, footer, nav {
+    display: none;
+}
+main, article > header, article > footer {
+    display: block;
+}
+main {
+    float:left; 
+    width: 90%;
+    margin-left: 5%;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+p {
+    margin: 5px 0px;
+}
+article {
+    margin-top: 2px;
+    text-align: justify;
+    padding: 7px;
+    
+}
+@media all and (orientation: landscape) {
+    article {
+        column-count: 3;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+    }
+}
+article > header {
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 0.5px solid black;
+    width: 100%;
+    background-color: inherit;
+}
+
+article > footer {
+    font-weight: bold;
+    border-top: 0.5px solid black;
+    width: 100%;
+    background-color: inherit;
+    
+}
