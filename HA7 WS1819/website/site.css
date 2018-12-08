@@ -6,6 +6,30 @@ body {
     text-align: justify;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.flex-container > div {
+    letter-spacing: normal !important;
+    width: 260px;
+    padding: 5px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 400px) {
+    .flex-container {
+        align-items: stretch;
+        background-color: red;
+    }
+    
+}
+
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2em;
     margin: 0px;
@@ -35,7 +59,7 @@ header {
 }
 
 .nav, .footer {
-    background-color: #909090;
+    background-color: #e1e1e1;
 }
 
 .header, .nav, .content, .footer {
