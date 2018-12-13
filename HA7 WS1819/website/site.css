@@ -22,6 +22,32 @@ body {
     margin: 5px;
 }
 
+.flex-container header {
+    position: relative;
+}
+
+.flex-container h3 {
+    position: absolute;
+    color: white;
+    bottom: 1px;
+    z-index: 3;
+}
+
+.flex-container img {
+    z-index: 1;
+}
+
+.flex-container header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent 100%, #333);
+    z-index: 2;
+}
+
 @media screen and (max-width: 400px) {
     .flex-container {
         align-items: stretch;

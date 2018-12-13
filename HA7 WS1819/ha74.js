@@ -68,10 +68,16 @@ function getAggregatedAge(personsArray) {
 // Bsp-Rückgabe für persons:
 // Map { 'f' = > 3, 'm' = > 3 }
 function getAmount(personsArray) {
-    return {
-        "Women": filterSex(personsArray, 'f').length,
-        "Men": filterSex(personsArray, 'm').length
-    };
+    return personsArray.reduce ((m, person) => {
+        const sex = person[3];
+        if(!m.has(sex)) m.set(sex,0);
+        m.set(sex, m.get(sex) + 1);
+        return m;
+    }, new Map());
+    // return {
+    //     "Women": filterSex(personsArray, 'f').length, //hier ist nicht mit Map geloest
+    //     "Men": filterSex(personsArray, 'm').length
+    // };
 }
 
 console.log("filtering sex: ");

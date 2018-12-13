@@ -19,12 +19,12 @@ FRAGE: Worauf beziehen sich Prozentangaben? Finden Sie heraus, worauf sich Proze
 
 ANTWORT: 
 
-Die Prozentangaben beziehen sich auf der Größe des Viewports.
+Die Prozentangaben beziehen sich auf der Größe der Breite des Elternelements.
 
 Wenn margin-left und margin-top zB auf 25% gesetzt werden, skaliert die Größe des Elements auf dem Fenster.
 Height skaliert mit Prozentangabe nicht.
 Font-size ist bei 1em/16px/100% auf default Größe, skaliert mit höherer Prozentangabe.
-Border-top-width skaliert mit Prozentangabe nicht.
+Border-top-width skaliert mit Prozentangabe nicht. (einfach nicht moglich Prozent anzugeben)
 
 
 ==================================
@@ -33,7 +33,8 @@ FRAGE: Was ist die Einheit em und was ist der Unterschied zur Einheit rem?
 
 ANTWORT: 
 
-Em ist eine relative Einheit, kann zur Bestimmung von Zeichenbreite abhängig von der Schriftgröße benutzt werden. Rem entspricht der Schriftgröße, die für das Wurzelelement festgelegt wurde. (das html-Element)
+Em ist eine relative Einheit, kann zur Bestimmung von Zeichenbreite abhängig von der Schriftgröße benutzt werden.
+Rem entspricht der Schriftgröße, die für das Wurzelelement festgelegt wurde. (das html-Element)
 
 
 ==================================
