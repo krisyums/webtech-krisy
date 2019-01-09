@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @media (min-width: 680px) {
+            body {
+                background-color: #dedad5;
+                display: grid;
+                
+            }
+            .main {
+                margin: auto;
+                background: url(https://i.pinimg.com/originals/ea/40/91/ea4091b1a1666c7163fac837aafd3375.jpg);
+                width: 680px;
+                height: 920px;
+                grid-template-columns: 25% 1fr 25% 1fr 25% 1fr 25% 1fr;
+                grid-template-rows: repeat(6, 160px);
+            }
+            .question {
+                display: ;
+            }
+            .answer {
+                display:none;
+            }
+            
+            .tag19 {
+                position: absolute;
+                border: 2px black solid;
+                width: 130px;
+                height: 130px;
+                top: 340px;
+                left: 75px;
+            }
+            /*.tag19:hover {*/
+            /*    background-color: #666;*/
+            /*}*/
+            
+        }
+    </style>
+    
+    <script>
+        document.getElementsByClassName("tag19").addEventListener("click",clickDay);
+        function clickDay() {
+            document.getElementByClassName("tag19").innerHTML = document.getElementsByClassName(question);
+        }
+</script>
+</head>
+<body>
+
+
+<div class="main">
+    <div class="tag19" onclick="clickDay()">
+        <p id="click">Click?</p>
+    </div>
+    
+    <div class="question">
+        Welche verschiedenen Layout-Arten gibt es? Was sind die Unterschiede?
+        
+    </div>
+    
+    <div class="answer">
+        Festes Layout: Dimensionen sind angegeben, dynamische Anpassung ist nicht möglich.
+        
+        Flüssiges Layout: wird in Prozenten definiert.Wenn die Größe des Fensters verändert wird, verändern sich auch die Dimensionen des Layouts.Inhalte bleiben in derselben Größe.
+        
+        Elastisches Layout: skaliert mit der Schriftgröße, nicht Bildschirmbreite;
+        Breitenangaben werden in em angegeben, bezieht sich auf der Schriftgröße
+        
+        Adaptives Layout: festes Layout, passt sich bei Änderungen des Viewports an.Bildschirmbreite muss vordefiniert werden(Umbruchstellen usw) und wechselt zwischen verschiedenen Versionen
+        
+        Responsive Layout: hat Eigenschaften von adaptiven und flüssigen Layouts.Es verfügt über Umbruchstellen, und inzwischen verhält sich wie flüssiges Layout.
+    </div>
+
+</div>
+
+
+</body>
+</html>

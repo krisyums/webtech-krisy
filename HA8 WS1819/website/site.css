@@ -1,9 +1,89 @@
+@media screen and (max-width: 961px) {
+    .container {
+        margin: 0;
+    }
+
+    .header {
+        border: 0px;
+        /*border: box-sizing;*/
+        box-shadow: 0px 3px #999;
+        background-color: #e1e1e1;
+        text-align: left;
+    }
+
+    .header, .menu {
+        display: inline-block;
+    }
+
+    .dropdown-button {
+        background-color: inherit;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .menu {
+        position: relative;
+        display: inline-block;
+        float: right;
+        overflow: hidden;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+    /*.menu {*/
+    /*    text-align: right;*/
+    /*    position: relative;*/
+    /*    float: right;*/
+    /*    overflow: hidden;*/
+    /*}*/
+
+    /*.dropdown-content {*/
+    /*    display: block;*/
+    /*    letter-spacing: 2px;*/
+    /*    text-transform: uppercase;*/
+    /*    padding: 1em 1em 1em 1em;*/
+    /*    z-index: 2;*/
+    /*    min-width: 160px;*/
+    /*    position: relative;*/
+
+    /*}*/
+
+    /*.dropdown-button {*/
+    /*    cursor: pointer;*/
+    /*    font-size: 16px;*/
+    /*    border: none;*/
+    /*    outline: none;*/
+    /*    margin: 5px 5px 0px 0px;*/
+    /*    font-family: inherit;*/
+    /*    text-transform: uppercase;*/
+    /*    color: inherit;*/
+    /*}*/
+}
+
 body {
     background-color: lightgrey;
     font-family: Sans-Serif;
     color: #222222;
     line-height: 1.5em;
     text-align: justify;
+    box-sizing: border-box;
 }
 
 .flex-container {
@@ -12,30 +92,29 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    
 }
 
-.flex-container > div {
+.flex-container>div {
     letter-spacing: normal !important;
     width: 260px;
     padding: 5px;
     margin: 5px;
 }
 
-@media screen and (max-width: 400px) {
-    .flex-container {
-        align-items: stretch;
-        background-color: red;
-    }
-    
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 1.2em;
     margin: 0px;
 }
 
-.content h1, h2, h3, h4 {
+.content h1,
+h2,
+h3,
+h4 {
     text-transform: uppercase;
     font-weight: normal;
     margin-top: 2rem;
@@ -58,31 +137,38 @@ header {
     box-shadow: 0px 0px 10px 2px #999;
 }
 
-.nav, .footer {
+.header,
+.menu,
+.footer {
     background-color: #e1e1e1;
 }
 
-.header, .nav, .content, .footer {
+/*.header, */
+
+/*.menu,*/
+
+.content,
+.footer {
     padding: 1em 1em 1em 1em;
 }
 
-.nav ul, .footer ul {
-    padding: 0px;
-    margin: 0px;
-    text-transform: uppercase;
-}
-
-.nav li, .footer li {
-    display: inline;
-    letter-spacing: 2px;
-}
-
-.nav .active {
+.active {
     font-weight: bold;
 }
 
 .footer {
     font-size: 0.75em;
+}
+
+.footer ul {
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.footer li {
+    display: inline;
+    letter-spacing: 2px;
 }
 
 a {
